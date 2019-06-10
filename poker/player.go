@@ -3,11 +3,11 @@ package poker
 import "fmt"
 
 type player struct {
-	name string
+	name      string
 	handCards []card
 }
 
-func Player(name string)(player) {
+func Player(name string) player {
 	var player player
 	player.name = name
 	return player

@@ -1,11 +1,11 @@
 package poker
 
-type card struct { 
-	suit string 
+type card struct {
+	suit  string
 	point string
 }
 
-func newCard(s string, p string)(card) {
+func newCard(s string, p string) card {
 	var Card card
 	Card.setSuit(s)
 	Card.setPoint(p)
@@ -20,10 +20,10 @@ func (card *card) setSuit(suit string) {
 	card.suit = suit
 }
 
-func (card card) getCard()(card) {
-	return card;
+func (card card) getCard() card {
+	return card
 }
 
-func (card card) show()(string) {
+func (card card) show() string {
 	return card.suit + card.point
 }

@@ -4,6 +4,6 @@ import (
 	poker "./poker"
 )
 
-func main () {
+func main() {
 	poker.Game("johnny", "amy", "tina", "amo")
 }
