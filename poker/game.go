@@ -20,7 +20,7 @@ func Game(args ...string) game {
 func (game game) deal() {
 	for i := 0; i < len(game.deck.cards); i++ {
 		var card card = game.deck.cards[i]
-		var player int = (i % 4)
+		var player int = (i % len(game.players))
 		game.players[player].addCard(card)
 	}
 }
